@@ -1,0 +1,120 @@
+/* Resetting default margin and padding */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting background color and font color */
+body {
+    background-image: url('https://images.nintendolife.com/6fd18282af5a0/pokemon.large.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Ensures background stays fixed while scrolling */
+    display: flex;
+    flex-direction: column; /* Ensure the main container is a column layout */
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    color: white; /* Font color */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Styling the header */
+header {
+    background-color: white;
+    width: 100%; /* Span the entire width */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 20px; /* Add padding to header */
+}
+h1 {
+    padding-top: 20px;
+    color: #FFECB3;
+}
+
+/* Styling the search bar */
+.search-bar {
+    margin-top: 20px; /* Add margin to separate from the title */
+}
+
+.search-bar input[type="text"],
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: gold; /* Change background color to gold on hover */
+}
+
+.pokeball {
+    width: 50px; /* Set width of the pokeball image */
+    margin-right: 20px; /* Add margin to the right to separate from h1 */
+}
+
+/* Styling the container */
+.container {
+    width: 40%; /* Set a fixed width for the container */
+    margin: auto;
+    background: whitesmoke;
+    min-height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Space the items evenly */
+    align-items: flex-start; /* Align items at the start of the flex container */
+}
+
+/* Styling the left container */
+#left_container {
+    padding: 15px;
+    flex: 1; /* Take up equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the right container */
+#right_container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex: 1; /* Take up equal space */
+    color: goldenrod;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: flex-start;
+}
+
+
+/* Styling the footer */
+footer {
+    background-color: goldenrod;
+    width: 100%; /* Span the entire width */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+}
